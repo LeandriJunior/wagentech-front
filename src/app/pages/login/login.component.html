@@ -1,0 +1,32 @@
+
+
+<div class="conteudo-login" >
+  <form class="conteudo-form" style="min-width: 250px;" [formGroup]="LoginForm" (submit)="submitLogin()">
+    <div class="logo" style="display: flex; justify-content: space-around;">
+      <div *ngIf="logo">
+          <img width="150" height="150" src="assets/img/{{logo}}" alt="">
+      </div>
+      <img width="150" height="150" src="assets/img/logos/wagentech.png" alt="">
+    </div>
+    <div>
+        <div>
+          <input class="input-login" type="username" id="username" formControlName="username" placeholder="Email"/>
+        </div>
+        <div class="mensage-error" *ngIf="LoginForm.get('username')?.errors?.required && LoginForm.get('username')?.touched">
+          Campo obrigatório!
+        </div>
+    </div>
+
+    <div>
+        <div>
+          <input class="input-login" type="password" id="password" formControlName="password" placeholder="Senha"/>
+        </div>
+        <div class="mensage-error" *ngIf="LoginForm.get('password')?.errors?.required && LoginForm.get('password')?.touched">
+          Campo obrigatório!
+        </div>
+    </div>
+    <div>
+      <button class="button-login" type="submit" [disabled]="!LoginForm.valid">Entrar</button>
+    </div>
+  </form>
+</div>

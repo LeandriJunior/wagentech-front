@@ -1,0 +1,16 @@
+{
+  "cartech": {
+    "name": "CarTech",
+    "description": "CarTech is a car dealership that sells cars.",
+    "url": "http://cartech.com",
+    "logo": "https://www.cartechautomotive.com.br/wp-content/uploads/2021/12/logo_cartech_automotive_systems.png",
+    "address": {
+      "street": "123 Main St.",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    },
+    "phone": "123-456-7890",
+    "email": "cartech@gmail.com"
+  }
+}
