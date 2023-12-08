@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginModel } from 'src/app/models/LoginModel';
 import { LoginService } from 'src/app/service/login.service';
-
+import {ToastrService} from 'ngx-toastr'
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -16,7 +16,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder : FormBuilder,
     private router: Router,
-    private loginService: LoginService ) { }
+    private loginService: LoginService,
+    private toastr:ToastrService ) { }
   logo: string = ''
   background = ''
 
@@ -40,9 +41,14 @@ export class LoginComponent implements OnInit {
   submitLogin(){
     var dadosLogin = this.LoginForm.getRawValue() as LoginModel;
     this.loginService.login(dadosLogin).pipe().subscribe(
-      novoValor => {
+      response => {
+        console.log(response)
         // Aqui você lida com o novo valor emitido pelo switchMap
-        console.log(novoValor);
+        if (response.status){
+            this.toastr.success(response.descricao);
+        }else{
+           this.toastr.error(response.descricao);
+        }
       },
       error => {
         console.error(error);

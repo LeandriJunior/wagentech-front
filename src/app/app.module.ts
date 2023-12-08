@@ -7,10 +7,17 @@ import { LoginComponent } from './pages/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrModule } from 'ngx-toastr';
+import { ToastrComponent } from './components/toastr/toastr.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './pages/home/home.component';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent
+    AppComponent, 
+    LoginComponent, 
+    ToastrComponent, 
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -18,8 +25,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     HttpClientModule,
     NgbModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
