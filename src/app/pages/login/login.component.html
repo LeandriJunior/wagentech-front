@@ -1,7 +1,7 @@
 
-<div class="conteudo-login">
-    <div class="card">
-      <form class="conteudo-form " style="min-width: 250px;" [formGroup]="LoginForm" (submit)="submitLogin()">
+<div class="conteudo-login" style="width: 100vw; height: 100vh;" [ngStyle]="{'background-color': background}">
+    <div class="card ">
+      <form class="conteudo-form " style="min-width: 350px;" [formGroup]="LoginForm" (submit)="submitLogin()">
         <div class=" card-body">
             <div class="logo" style="display: flex; justify-content: space-around;">
                 <div *ngIf="logo">
