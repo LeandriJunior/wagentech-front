@@ -8,16 +8,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
-import { ToastrComponent } from './components/toastr/toastr.component';
+import { ToastrComponent } from './shared/components/toastr/toastr.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     LoginComponent, 
     ToastrComponent, 
-    HomeComponent
+    HomeComponent, SidebarComponent
   ],
   imports: [
     BrowserModule,

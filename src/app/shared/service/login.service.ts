@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { environment } from "src/environments/environment";
 import { HttpClient } from "@angular/common/http";
 import { Location } from '@angular/common';
+import { Router } from "@angular/router";
 
 @Injectable({
 
@@ -10,9 +11,9 @@ import { Location } from '@angular/common';
 })
 
 export class LoginService {
-
-  constructor(private httpClient: HttpClient, private location: Location) {
-    
+  router: Router;
+  constructor(private httpClient: HttpClient, private location: Location, router:Router ) {
+    this.router = router;
   }
 
   host = window.location.hostname;
@@ -26,4 +27,15 @@ export class LoginService {
     return this.httpClient.get<any>(`${this.baseURL}/login`);
   }
 
+  logout(): void {
+    localStorage.removeItem('currentUser');
+    this.router.navigate(['login'])
+  }
+
+
+  isLoggedIn(): boolean {
+    
+    const currentUser = JSON.parse(localStorage.getItem('currentUser') || '{}');
+    return currentUser && currentUser.token;
+  }
 }

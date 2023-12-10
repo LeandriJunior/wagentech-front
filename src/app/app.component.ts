@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cartech-front';
+  whatrote(){
+    if (window.location.pathname == '/login'){
+      return false;
+    }
+    else{
+      return true
+    }
+  }
 }
