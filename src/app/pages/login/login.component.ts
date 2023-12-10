@@ -58,7 +58,7 @@ export class LoginComponent implements OnInit {
           console.log(response);
           
           if (response.status) {
-            this.tokenService.setToken(response.dados.token)
+            this.tokenService.setToken(response.dados.user_token)
             this.sessionService.setSession(response.dados.sessao)
             this.router.navigate([response.dados.sessao?.tela_principal ? response.dados.sessao?.tela_principal : 'home']);
           } else {

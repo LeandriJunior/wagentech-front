@@ -11,7 +11,7 @@ export class TokenService {
 
   getToken(): any {
     
-    return JSON.parse(localStorage.getItem('currentUser')!);
+    return JSON.parse(localStorage.getItem('token')!);
    
   }
 
@@ -22,16 +22,6 @@ export class TokenService {
 
   clearToken(): void {
     localStorage.removeItem('token');
-  }
-
-  getJwtDecoded(): any {
-    try {
-      return jwtDecode(this.getToken().token);
-    }
-    catch (error) {
-    }
-  }
-
- 
+  } 
 
 }

@@ -35,7 +35,7 @@ export class LoginService {
 
   isLoggedIn(): boolean {
     
-    const currentUser = JSON.parse(localStorage.getItem('currentUser') || '{}');
-    return currentUser && currentUser.token;
+    const token = JSON.parse(localStorage.getItem('token') || '');
+    return token;
   }
 }
