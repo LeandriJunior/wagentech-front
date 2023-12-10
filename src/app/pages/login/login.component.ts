@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
     private loginService: LoginService,
     private toastr:ToastrService ) { }
   logo: string = ''
-  background = ''
+  background:string = '#ffffff'
 
   ngOnInit(): void {
     this.LoginForm = this.formBuilder.group({
@@ -29,7 +29,9 @@ export class LoginComponent implements OnInit {
 
     this.loginService.get_login().pipe().subscribe(
       pagina => {
+        console.log(pagina.background_color)
         this.logo = pagina.logo
+        this.background = pagina.background_color
       },
       error => {
         console.error(error);
