@@ -2,15 +2,21 @@
     width: 60px;
     height: 100vh;
     overflow: hidden;
-    transition: .8s;
+    transition: .5s;
     position: absolute;
     z-index: 1000;
+}
+#sidebar:active {
+    width: 220px;
+    position: absolute;
 }
 
 #sidebar:hover {
     width: 220px;
     position: absolute;
   }
+
+
 .sidebar{
     position: absolute;
     

@@ -12,13 +12,14 @@ import { ToastrComponent } from './shared/components/toastr/toastr.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { UsuarioComponent } from './pages/usuario/usuario.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     LoginComponent, 
     ToastrComponent, 
-    HomeComponent, SidebarComponent
+    HomeComponent, SidebarComponent, UsuarioComponent
   ],
   imports: [
     BrowserModule,
