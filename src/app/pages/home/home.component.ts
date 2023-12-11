@@ -7,13 +7,20 @@ import { HomeService } from 'src/app/shared/service/home.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  schema: string = ''
-  constructor(private home:HomeService) { }
+  schema: string = '';
+  data: Array<any> ;
+  constructor(private home:HomeService) {
+    this.data = []  
+   }
 
   ngOnInit(): void {
-    this.home.get_home().pipe().subscribe(
+    this.home.get_pagina('home').pipe().subscribe(
       response => {
-        this.schema = response.mensagem
+        console.log()
+        var dados =  JSON.parse(response.dados.config)
+        this.data = dados
+
+        console.log(this.data)
       },
       error => {
         console.error(error);

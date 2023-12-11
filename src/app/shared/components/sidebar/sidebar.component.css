@@ -1,26 +1,22 @@
 #sidebar{
     width: 60px;
     height: 100vh;
+    top: 0;
+    left: 0;
     overflow: hidden;
     transition: .5s;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
 }
 #sidebar:active {
     width: 220px;
-    position: absolute;
+    position: fixed;
 }
 
 #sidebar:hover {
     width: 220px;
-    position: absolute;
+    position: fixed;
   }
-
-
-.sidebar{
-    position: absolute;
-    
-}
 
 .sidebar-hover:hover{
     background-color: rgb(48, 48, 48);

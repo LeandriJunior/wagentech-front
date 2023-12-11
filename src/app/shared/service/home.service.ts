@@ -18,10 +18,10 @@ export class HomeService {
 
   host = window.location.hostname;
   dominio = this.host.split('.')[0];
-  private readonly baseURL = "http://"+ this.dominio + '.' +environment["endPoint"]
+  private readonly baseURL = "http://"+ this.dominio + '.' + environment["endPoint"]
 
-  get_home(){
-    return this.httpClient.get<any>(`${this.baseURL}/home`);
+  get_pagina(pagina:string){
+    return this.httpClient.get<any>(`${this.baseURL}/pagina/buscar_pagina?pagina=${pagina}`);
   }
 
 }

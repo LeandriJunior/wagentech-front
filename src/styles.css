@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+:root {
+  --cor-bg-primary: #f3f1f1;; /* Substitua essa cor pela sua cor primária */
+}
 .icone-branco {
     filter: grayscale(100%);
   }

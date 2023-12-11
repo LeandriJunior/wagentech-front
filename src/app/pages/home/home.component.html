@@ -1,1 +1,11 @@
-<p>{{schema}} teste</p>
+<div class="dark-50 content-principal">
+    <div class="container">
+        <section class="d-flex justify-content-between align-items-center pt-3">
+            <div *ngFor="let item of data" class="card item d-flex align-items-center w-100 m-2 p-4">
+                <div class="d-flex justify-content-center" *ngIf="(item)">
+                    <span class="p-1">{{item.span}}</span> <span class="p-1">{{item.conteudo}}</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
