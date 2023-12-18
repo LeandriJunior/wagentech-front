@@ -31,9 +31,14 @@ export class SidebarComponent {
             rota: '/home',
             nome: 'Inicio',
             imagem: 'assets/img/icons/inicio.png',
-            filhos:[]
           },
-      
+          {
+            id:1,
+            show:true,
+            rota: '/ordem_servico',
+            nome: 'Ordem de Serviço',
+            imagem: 'assets/img/icons/ordem_servico.png',
+          },
       ]  
   }
   ngOnInit(): void {

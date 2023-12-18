@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { DxButtonModule, DxDataGridModule } from 'devextreme-angular';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +30,9 @@ import { UsuarioComponent } from './pages/usuario/usuario.component';
     HttpClientModule,
     NgbModule,
     BrowserAnimationsModule,
+    DxDataGridModule,
+    BrowserTransferStateModule,
+    DxButtonModule,
     ToastrModule.forRoot(),
   ],
   providers: [],

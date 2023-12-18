@@ -2,3 +2,6 @@
     height: 100vh; 
     background-color: var(--cor-bg-primary)
 }
+#dataGrid {
+    height: 300px;
+}
