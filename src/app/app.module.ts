@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDatepickerModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 import { ToastrComponent } from './shared/components/toastr/toastr.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -33,6 +33,7 @@ import { DxButtonModule, DxDataGridModule } from 'devextreme-angular';
     DxDataGridModule,
     BrowserTransferStateModule,
     DxButtonModule,
+    NgbDatepickerModule,
     ToastrModule.forRoot(),
   ],
   providers: [],

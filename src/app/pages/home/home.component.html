@@ -7,31 +7,45 @@
                 </div>
             </div>
         </section>
-        <section class=" m-2">
-            <dx-data-grid id="dataGrid"
-            [dataSource]="ordemServico"
-            keyExpr="id"
-            [allowColumnReordering]="true">
-            <dxi-column dataField="cliente"></dxi-column>
-            <dxi-column dataField="carro"></dxi-column>
-            <dxi-column dataField="placa"></dxi-column>
-            <dxi-column dataField="status"></dxi-column>
-            <dxi-column dataField="is_aprovado"></dxi-column>
-            <dxi-column dataField="responsavel"></dxi-column>
-            <dxi-column dataField="data_expedicao"></dxi-column>
-            <dxi-column dataField="data_entrega"></dxi-column>
-            <dxi-column dataField="hora_entrega"></dxi-column>
-            <dxi-column dataField="Ações" type="buttons">
-                <dxi-button template="myCommand">
-                    <div *dxTemplate="let data of 'myCommand'">
-                        <a class="btn-success p-2 m-2" style="border-radius: 4px;"><img src="assets/img/icons/adicionar.png" width="20" height="20" ></a>
-                    </div>
-                </dxi-button>
-            </dxi-column>
-            
-            ></dx-data-grid>
+        <section class="card m-2">
+            <div class="card-header d-flex justify-content-end">
+                <div>
+                    <button class="btn btn-success" (click)="open(content)">Nova Ordem</button>
+                </div>
+            </div>
+            <div class="card-body p-2">
+                <dx-data-grid id="dataGrid"
+                [dataSource]="ordemServico"
+                keyExpr="id"
+                [allowColumnReordering]="true">
+                <dxi-column dataField="cliente"></dxi-column>
+                <dxi-column dataField="carro"></dxi-column>
+                <dxi-column dataField="placa"></dxi-column>
+                <dxi-column dataField="status"></dxi-column>
+                <dxi-column dataField="is_aprovado"></dxi-column>
+                <dxi-column dataField="responsavel"></dxi-column>
+                <dxi-column dataField="data_expedicao"></dxi-column>
+                <dxi-column dataField="data_entrega"></dxi-column>
+                <dxi-column dataField="hora_entrega"></dxi-column>
+                <dxi-column dataField="Ações" type="buttons">
+                    <dxi-button template="myCommand">
+                        <div *dxTemplate="let data of 'myCommand'">
+                            <a class="btn-success p-2 m-2" style="border-radius: 4px;"><img src="assets/img/icons/adicionar.png" width="20" height="20" ></a>
+                        </div>
+                    </dxi-button>
+                </dxi-column>
+                
+                ></dx-data-grid>
+            </div>
+            <div class="card-footer">
+
+            </div>
         </section>
         
     </div>
+   
 </div>
 
+<ng-template #content let-modal>
+    
+</ng-template>
