@@ -14,7 +14,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
 import { DxButtonModule, DxDataGridModule } from 'devextreme-angular';
-import { ModalOrdemServicoComponent } from './shared/components/modal-ordem-servico/modal-ordem-servico.component';
+import { OrdemServicoComponent } from './pages/ordem-servico/ordem-servico.component';
 
 
 @NgModule({
@@ -25,7 +25,7 @@ import { ModalOrdemServicoComponent } from './shared/components/modal-ordem-serv
     HomeComponent, 
     SidebarComponent, 
     UsuarioComponent,
-    ModalOrdemServicoComponent
+    OrdemServicoComponent
   ],
   imports: [
     BrowserModule,

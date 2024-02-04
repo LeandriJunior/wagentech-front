@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ModalOrdemServicoComponent } from './modal-ordem-servico.component';
+import { OrdemServicoComponent } from './ordem-servico.component';
 
-describe('ModalOrdemServicoComponent', () => {
-  let component: ModalOrdemServicoComponent;
-  let fixture: ComponentFixture<ModalOrdemServicoComponent>;
+describe('OrdemServicoComponent', () => {
+  let component: OrdemServicoComponent;
+  let fixture: ComponentFixture<OrdemServicoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ModalOrdemServicoComponent ]
+      declarations: [ OrdemServicoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ModalOrdemServicoComponent);
+    fixture = TestBed.createComponent(OrdemServicoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

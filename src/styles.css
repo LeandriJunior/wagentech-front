@@ -2,7 +2,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 :root {
   --cor-bg-primary: #f3f1f1;; /* Substitua essa cor pela sua cor primária */
+  background-color: #f3f1f1;
 }
 .icone-branco {
     filter: grayscale(100%);
   }
+

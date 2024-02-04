@@ -10,7 +10,7 @@
         <section class="card m-2">
             <div class="card-header d-flex justify-content-end">
                 <div>
-                    <button class="btn btn-success" (click)="open(content)">Nova Ordem</button>
+                    <button class="btn btn-success" (click)="novaOrdem()">Nova Ordem</button>
                 </div>
             </div>
             <div class="card-body p-2">
@@ -46,26 +46,3 @@
    
 </div>
 
-<ng-template #content let-modal>
-    <div class="card-header">
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center">
-                <span class="h5"><strong>Ordem de Servico</strong></span>
-            </div>
-            <a (click)="modal.close()" class="btn btn-light">
-                <i class="bi bi-x-lg"></i>
-            </a>
-        </div>
-    </div>
-        
-    <div class="card-body">
-        <app-modal-ordem-servico></app-modal-ordem-servico>
-    </div>
-    
-    <div class="card-footer">
-        <div class="d-flex justify-content-end">
-            <a (click)="salvarOrdemServico()" class="btn btn-success">Salvar</a>
-        </div>
-    </div>
-    
-</ng-template>

@@ -35,7 +35,7 @@ export class SidebarComponent {
           {
             id:1,
             show:true,
-            rota: '/ordem_servico',
+            rota: '/ordem-servico',
             nome: 'Ordem de Serviço',
             imagem: 'assets/img/icons/ordem_servico.png',
           },
