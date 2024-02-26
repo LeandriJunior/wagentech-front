@@ -15,6 +15,8 @@ import { SidebarComponent } from './shared/components/sidebar/sidebar.component'
 import { UsuarioComponent } from './pages/usuario/usuario.component';
 import { DxButtonModule, DxDataGridModule } from 'devextreme-angular';
 import { OrdemServicoComponent } from './pages/ordem-servico/ordem-servico.component';
+import { CadClienteComponent } from './shared/components/cad-cliente/cad-cliente.component';
+import { CadCarroComponent } from './shared/components/cad-carro/cad-carro.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { OrdemServicoComponent } from './pages/ordem-servico/ordem-servico.compo
     HomeComponent, 
     SidebarComponent, 
     UsuarioComponent,
-    OrdemServicoComponent
+    OrdemServicoComponent,
+    CadClienteComponent,
+    CadCarroComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,7 @@ import { OrdemServicoComponent } from './pages/ordem-servico/ordem-servico.compo
     BrowserTransferStateModule,
     DxButtonModule,
     NgbDatepickerModule,
+    
     ToastrModule.forRoot(),
   ],
   providers: [],
