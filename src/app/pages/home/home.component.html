@@ -1,48 +1,4 @@
 <div class="dark-50 content-principal">
-    <div class=" container-fluid">
-        <section class="d-flex justify-content-between align-items-center pt-3 mb-3">
-            <div *ngFor="let item of data" class="card item d-flex align-items-center w-100 p-4 m-2">
-                <div class="d-flex justify-content-center" *ngIf="(item)">
-                    <span class="p-1">{{item.span}}:</span> <span class="p-1">{{item.conteudo}}</span>
-                </div>
-            </div>
-        </section>
-        <section class="card m-2">
-            <div class="card-header d-flex justify-content-end">
-                <div>
-                    <button class="btn btn-success" (click)="novaOrdem()">Nova Ordem</button>
-                </div>
-            </div>
-            <div class="card-body p-2">
-                <dx-data-grid id="dataGrid"
-                [dataSource]="ordemServico"
-                keyExpr="id"
-                [allowColumnReordering]="true">
-                <dxi-column dataField="cliente"></dxi-column>
-                <dxi-column dataField="carro"></dxi-column>
-                <dxi-column dataField="placa"></dxi-column>
-                <dxi-column dataField="status"></dxi-column>
-                <dxi-column dataField="is_aprovado"></dxi-column>
-                <dxi-column dataField="responsavel"></dxi-column>
-                <dxi-column dataField="data_expedicao"></dxi-column>
-                <dxi-column dataField="data_entrega"></dxi-column>
-                <dxi-column dataField="hora_entrega"></dxi-column>
-                <dxi-column dataField="Ações" type="buttons">
-                    <dxi-button template="myCommand">
-                        <div *dxTemplate="let data of 'myCommand'">
-                            <a class="btn-success p-2 m-2" style="border-radius: 4px;"><img src="assets/img/icons/adicionar.png" width="20" height="20" ></a>
-                        </div>
-                    </dxi-button>
-                </dxi-column>
-                
-                ></dx-data-grid>
-            </div>
-            <div class="card-footer">
-
-            </div>
-        </section>
-        
-    </div>
-   
+    home works
 </div>
 

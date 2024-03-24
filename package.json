@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~12.1.2",
     "@angular/router": "~12.1.2",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
+    "@ng-icons/core": "^27.2.0",
+    "@ng-icons/heroicons": "^27.2.0",
     "bootstrap": "^5.3.0",
     "bootstrap-icons": "^1.11.3",
     "devextreme": "^23.1.6",

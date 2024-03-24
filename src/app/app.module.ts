@@ -12,11 +12,7 @@ import { ToastrComponent } from './shared/components/toastr/toastr.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
-import { UsuarioComponent } from './pages/usuario/usuario.component';
 import { DxButtonModule, DxDataGridModule } from 'devextreme-angular';
-import { OrdemServicoComponent } from './pages/ordem-servico/ordem-servico.component';
-import { CadClienteComponent } from './shared/components/cad-cliente/cad-cliente.component';
-import { CadCarroComponent } from './shared/components/cad-carro/cad-carro.component';
 
 
 @NgModule({
@@ -26,10 +22,6 @@ import { CadCarroComponent } from './shared/components/cad-carro/cad-carro.compo
     ToastrComponent, 
     HomeComponent, 
     SidebarComponent, 
-    UsuarioComponent,
-    OrdemServicoComponent,
-    CadClienteComponent,
-    CadCarroComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +34,6 @@ import { CadCarroComponent } from './shared/components/cad-carro/cad-carro.compo
     BrowserTransferStateModule,
     DxButtonModule,
     NgbDatepickerModule,
-    
     ToastrModule.forRoot(),
   ],
   providers: [],

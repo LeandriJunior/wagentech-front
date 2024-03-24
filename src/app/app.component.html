@@ -1,9 +1,6 @@
 <div *ngIf="whatrote()" class="root">
     <app-sidebar></app-sidebar>
     <div style="margin-left:60px;">
-        <router-outlet></router-outlet>
+        <router-outlet></router-outlet>        <router-outlet></router-outlet>
     </div>  
 </div>
-<div *ngIf="!whatrote()">
-    <router-outlet></router-outlet>
-</div>  
